@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --azul-forte: #22577aff;
+    --ciano: #38a3a5ff;
+    --esmeralda: #57cc99ff;
+    --verde-claro: #80ed99ff;
+    --verde: #c7f9ccff;
+    --branco: #F6F1E9;
+    --preto: #000000;
+    --texto: "Playfair Display", serif;
+    --titulo: "Limelight", sans-serif;
+}
+
+body{
+    background-color: var(--ciano);
+    font-family: var(--texto);
+}
+
+
+header{
+    background-color: var(--azul-forte);
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6%;
+}
+
+.logo{
+    width: 15%;
+    border-radius: 100%;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--branco);
+}
+.menu a:hover{
+    color: var(--verde-claro);
+    transition: 0.5s;
+}
+
+.capa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
+}
+
+.capa img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+main{
+    background-color: var(--verde);
+    padding-bottom: 40px;
+}
+.apresentacao{
+    font-family: var(--titulo);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.apresentacao h2{
+    font-size: 50px;
+    color: var(--azul-forte);
+    margin-bottom: 20px;
+}
+.apresentacao p{
+    font-size: 20px;
+    color: var(--preto);
+    margin: 0 20%;
+    line-height: 1.5;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 2px;
+}
+.sobre div{
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+}
+.img-sobre{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.img-sobre img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.sobre h2{
+    font-family: var(--titulo);
+    font-size: 40px;
+    color: var(--azul-forte);
+    margin-bottom: 20px;
+}
+.sobre p{
+    font-size: 18px;
+    color: var(--preto);
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
