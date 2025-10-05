@@ -132,3 +132,64 @@ main{
     line-height: 1.5;
     padding-bottom: 20px;
 }
+footer{
+    background-color: var(--azul-forte);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+/* produtos.html */
+.produtos{
+    padding: 40px 0;
+    text-align: center;
+}
+.produtos h2{
+    font-family: var(--titulo);
+    font-size: 40px;
+    color: var(--azul-forte);
+    margin-bottom: 20px;
+}
+.lista-produtos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.produto{
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 20px;
+    width: 27%;
+}
+.produto img{
+    width: 100%;
+    border-radius: 10px;
+}
+.produto h3{
+    font-size: 20px;
+    color: var(--azul-forte);
+    margin: 10px 0;
+}
+.produto p{
+    font-size: 18px;
+    color: var(--preto);
+}
+.produto .preco{
+    font-size: 22px;
+    color: var(--esmeralda);
+    font-weight: bold;
+    margin-top: 10px;
+}
+.produto button{
+    background-color: var(--ciano);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
