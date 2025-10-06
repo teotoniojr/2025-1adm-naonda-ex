@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 :root{
     --azul-forte: #22577aff;
     --ciano: #38a3a5ff;
@@ -15,73 +22,77 @@
 body{
     background-color: var(--ciano);
     font-family: var(--texto);
-    margin: 0;
 }
+
 
 header{
     background-color: var(--azul-forte);
+    height: 150px;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
     align-items: center;
+    padding: 6%;
 }
 
-.img-logo{
-    width: 10%;
+.logo{
+    width: 15%;
     border-radius: 100%;
 }
 
 .menu{
-    display: flex;
     list-style: none;
-    gap: 30px;
+    display: flex;
+    gap: 50px;
+    color: var(--branco);
     font-size: 20px;
-    font-family: var(--titulo);
+    font-weight: bold;
     text-transform: uppercase;
 }
-
 .menu a{
     text-decoration: none;
-    color: var(--verde);
+    color: var(--branco);
 }
-
 .menu a:hover{
-    color: var(--preto);
-    transition: 0.5s; 
+    color: var(--verde-claro);
+    transition: 0.5s;
 }
 
-.capa{
+.capa {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    align-items: center; 
+    overflow: hidden; 
 }
 
-.capa img{
+.capa img {
     width: 100%;
     height: auto;
-    display:block;
+    display: block;
     object-fit: cover;
 }
 
+main{
+    background-color: var(--verde);
+    padding-bottom: 40px;
+}
 .apresentacao{
     font-family: var(--titulo);
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0;
 }
-
 
 .apresentacao h2{
-    color: var(--verde-claro);
     font-size: 50px;
+    color: var(--azul-forte);
+    margin-bottom: 20px;
 }
-
 .apresentacao p{
-    color: var(--esmeralda);
-    font-size: 25px;
-    font-family: var(--texto);
+    font-size: 20px;
+    color: var(--preto);
+    margin: 0 20%;
+    line-height: 1.5;
 }
 
 .sobre{
@@ -89,36 +100,96 @@ header{
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    gap: 5px;
+    gap: 2px;
 }
 .sobre div{
     width: 40%;
+    border-radius: 10px;
     text-align: center;
 }
-.sobre-img img{
+.img-sobre{
     width: 50%;
-    border-radius: 0px 20px 0 20px;
-    box-shadow: 3px 3px 10px #130f21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
 
+.img-sobre img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
 .sobre h2{
     font-family: var(--titulo);
     font-size: 40px;
-    color: var(--verde-claro);
-    margin-bottom: 15px;
+    color: var(--azul-forte);
+    margin-bottom: 20px;
 }
-
 .sobre p{
-    font-size: 24px;
-    color: var(--esmeralda);
+    font-size: 18px;
+    color: var(--preto);
+    line-height: 1.5;
+    padding-bottom: 20px;
 }
-
 footer{
     background-color: var(--azul-forte);
     height: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: var(--esmeralda);
+    align-items: center;
+    color: var(--branco);
     font-size: 18px;
+}
+
+/* produtos.html */
+.produtos{
+    padding: 40px 0;
+    text-align: center;
+}
+.produtos h2{
+    font-family: var(--titulo);
+    font-size: 40px;
+    color: var(--azul-forte);
+    margin-bottom: 20px;
+}
+.lista-produtos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.produto{
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 20px;
+    width: 27%;
+}
+.produto img{
+    width: 100%;
+    border-radius: 10px;
+}
+.produto h3{
+    font-size: 20px;
+    color: var(--azul-forte);
+    margin: 10px 0;
+}
+.produto p{
+    font-size: 18px;
+    color: var(--preto);
+}
+.produto .preco{
+    font-size: 22px;
+    color: var(--esmeralda);
+    font-weight: bold;
+    margin-top: 10px;
+}
+.produto button{
+    background-color: var(--ciano);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
